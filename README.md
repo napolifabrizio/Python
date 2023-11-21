@@ -15,7 +15,7 @@ Ao longo desse readme, vai ter mais detalhes sobre os projetos. Boa leitura!
 <h2><b>Projetos</b></h2>
 
 <p>
- 1 - 
+ 1 - jogoAdvinhacao.py --> Jogo aonde a máquina gera um número aleatório, entre 1 e 350, e o jogador tenta advinhar o número.
 
  2 - 
 
