@@ -4,7 +4,7 @@
 ![Badge em Desenvolvimento](https://img.shields.io/badge/status-desenvolvimento-yellow)
 
 <section>
-<h2><b>Descrição do Projeto</b></h2>
+<h2><b>Descrição</b></h2>
 
 <p>
 Quero me desenvolver mais ainda nessa tecnologia braba! Com isso, nasceu esse repesitório, um lugar maravihoso onde vou colocar alguns projetos que me façam aprender mais sobre Python :)
@@ -12,14 +12,19 @@ Ao longo desse readme, vai ter mais detalhes sobre os projetos. Boa leitura!
 </p><br>
 </section>
 <section>
-<h2><b>Projetos</b></h2>
+<h2><b>Principais projetos</b></h2>
 
 <p>
- 1 - jogoAdvinhacao.py --> Jogo aonde a máquina gera um número aleatório, entre 1 e 350, e o jogador tenta advinhar o número.
+ 1 -
 
  2 - 
 
  3 -
+</p>
+
+<h2>Demais projetos</h2>
+<p>
+jogoAdvinhacao.py --> Jogo aonde a máquina gera um número aleatório, entre 1 e 350, e o jogador tenta advinhar o número.
 </p>
 </section>
 
