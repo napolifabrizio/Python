@@ -8,7 +8,7 @@
 
 <p>
 Quero me desenvolver mais ainda nessa tecnologia braba que é o Python! Com isso, nasceu esse repositório, um lugar lindo, onde vou colocar alguns projetos que me façam aprender mais :)
-Ao longo desse readme, vai ter mais detalhes sobre os projetos.
+Ao longo desse readme, vão ter mais detalhes sobre os projetos.
 
 Não sei quantos projetos vou colocar ainda, ou ainda seus assuntos. Com o tempo vou desenvolvendo e colocando aqui. Portanto, não se assuste se ver algumas, ou muitas (hihi), mudanças.<br>
 ### Boa leitura!
