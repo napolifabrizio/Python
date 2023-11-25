@@ -7,15 +7,19 @@
 <h2><b>Descrição</b></h2>
 
 <p>
-Quero me desenvolver mais ainda nessa tecnologia braba! Com isso, nasceu esse repesitório, um lugar maravihoso onde vou colocar alguns projetos que me façam aprender mais sobre Python :)
-Ao longo desse readme, vai ter mais detalhes sobre os projetos. Boa leitura! 
-</p><br>
+Quero me desenvolver mais ainda nessa tecnologia braba que é o Python! Com isso, nasceu esse repositório, um lugar lindo, onde vou colocar alguns projetos que me façam aprender mais :)
+Ao longo desse readme, vai ter mais detalhes sobre os projetos.
+
+Não sei quantos projetos vou colocar ainda, ou ainda seus assuntos. Com o tempo vou desenvolvendo e colocando aqui. Portanto, não se assuste se ver algumas, ou muitas (hihi), mudanças.<br>
+### Boa leitura!
+</p>
 </section>
 <section>
 <h2><b>Principais projetos</b></h2>
 
 <p>
- 1 -
+inicio_orientacao_objetos --> Meu início em POO (Programação 
+Orientada a Objetos) na linguagem Python
 
  2 - 
 
@@ -45,6 +49,10 @@ Primeira:
 </h3>
 Vou adicionando os projetos e falando deles por aqui com o tempo, então não estranhe se faltar informação ou coisas que não fazem sentido. Nesse primeiro momento, peço vista grossa :)
 <br>
+<h3>
+Segunda:
+</h3>
+Cada projeto dentro desse repositório vai contar com um <b>simples</b> "readme" para explicar sobre o mesmo.
 
 
 
