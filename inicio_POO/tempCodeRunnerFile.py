@@ -1,0 +1,1 @@
+cliente_Fabrizio = Cliente("Fabrizio")
