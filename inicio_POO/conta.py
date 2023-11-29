@@ -8,8 +8,6 @@ class Conta:
         self.__titular = titular
         self.__saldo = saldo
         self.__limite = limite
-        self.__codigo_banco = "001"
-
 
     @property
     def saldo(self):
@@ -52,17 +50,22 @@ class Conta:
         self.__saldo += valor
     
     def __pode_sacar(self, valor):
-        if (valor > 0):
-            max_sacar = self.__saldo + self.__limite
-            return valor <= max_sacar
-        else:
-            return False
+        return valor <= self.__saldo
 
     def sacar(self, valor):
         if (self.__pode_sacar(valor)):
             self.__saldo -= valor
         else:
             print("Valor inválido")
+
+    def __liberar_credito(self, valor):
+        return valor <= self.__limite
+    
+    def pagamento_credito(self, valor):
+        if (self.__liberar_credito(valor)):
+            print("Pagamento aprovado!")
+        else:
+            print("Pagamento não aprovado!")
 
     def transferir(self, valor, destino):
         self.sacar(valor)

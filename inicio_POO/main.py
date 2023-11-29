@@ -14,4 +14,4 @@ print(cliente_Fabrizio.nome)
 cliente_Fabrizio.nome = "Fafa"
 print(cliente_Fabrizio.nome)
 
-Conta.codigos_bancos()
+conta_Fabrizio.pagamento_credito(500)
