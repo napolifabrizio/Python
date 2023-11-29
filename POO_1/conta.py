@@ -31,7 +31,7 @@ class Conta:
     
     @staticmethod
     def codigos_bancos():
-        caminho_arquivo_json = 'inicio_POO/banco_codigo.json'
+        caminho_arquivo_json = 'POO_1/banco_codigo.json'
 
         with open(caminho_arquivo_json, 'r') as arquivo:
             dados = json.load(arquivo)
