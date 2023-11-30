@@ -24,3 +24,9 @@ maiores_de_idade2 = [idade for idade in contas_idade2 if idade >= 18]
 print(maiores_de_idade2)
 ##################################################### List Comprehesion
 
+############################## saber aonde o codigo esta sendo executado
+import os
+
+diretorio_atual = os.getcwd()
+print("O diretório atual é:", diretorio_atual)
+#####################################################
