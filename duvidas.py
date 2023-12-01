@@ -30,3 +30,9 @@ import os
 diretorio_atual = os.getcwd()
 print("O diretório atual é:", diretorio_atual)
 #####################################################
+
+########################################## Ternary Operator
+
+idade = 10
+maior_de_idade = "maior de idade" if idade >= 18 else "menor de idade"
+print(maior_de_idade)
