@@ -18,17 +18,17 @@ Não sei quantos projetos vou colocar ainda, ou ainda seus assuntos. Com o tempo
 <h2><b>Principais projetos</b></h2>
 
 <p>
-inicio_orientacao_objetos --> Meu início em POO (Programação 
+POO_1 --> Meu início em POO (Programação 
 Orientada a Objetos) na linguagem Python
 
- 2 - 
+POO_2 --> Projeto mais avançado sobre POO 
 
  3 -
 </p>
 
 <h2>Demais projetos</h2>
 <p>
-jogo_advinhacao.py --> Jogo aonde a máquina gera um número aleatório, entre 1 e 350, e o jogador tenta advinhar o número.
+extrator_url.py --> Projeto sobre manipulação de strings, expressões regulares e métodos especiais do Python.
 <br><br>
 duvidas.py --> Apenas um arquivo para tirar algumas dúvidas, ou fazer testes, sobre a linguagem/projeto.
 </p>
