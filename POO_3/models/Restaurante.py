@@ -1,4 +1,4 @@
-from Avaliacao import Avaliacao
+from models.Avaliacao import Avaliacao
 
 class Restaurante:
     restaurantes  = []
@@ -15,7 +15,7 @@ class Restaurante:
     @classmethod
     def listar_restaurantes(cls):
         for restaurante in cls.restaurantes:
-            print(f"{restaurante._nome} | {restaurante._categoria} | {restaurante._ativo}")
+            print(f'{restaurante._nome} | {restaurante._categoria} | {restaurante._ativo} | {restaurante.media_avaliacoes}')
 
     @property
     def ativo(self):
@@ -25,13 +25,17 @@ class Restaurante:
         self._ativo = (not self._ativo)
 
     def avaliar(self, cliente, nota):
+        if nota > 5:
+            nota = 5
+        elif nota < 1:
+            nota = 1
         avaliacao = Avaliacao(cliente, nota)
         self._avaliacao.append(avaliacao)
 
     @property
     def media_avaliacoes(self):
         if not self._avaliacao:
-            return 0
+            return "-"
         else:
             soma_notas = sum(avaliacao._nota for avaliacao in self._avaliacao)
             quantidade_notas = len(self._avaliacao)
