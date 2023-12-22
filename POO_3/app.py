@@ -1,15 +1,32 @@
 from models.Restaurante import Restaurante
 from models.cardapio.Bebida import Bebida
 from models.cardapio.Prato import Prato
+import requests
+import json
 
-restaurante_vingadores = Restaurante("Vingadores", "Pizza")
-bebida_suco = Bebida("Suco de Melancia", 6.0, "Grande")
-prato_pao = Prato("Pão", 2.0, "Pão Francês")
+url = 'https://guilhermeonrails.github.io/api-restaurantes/restaurantes.json'
+response = requests.get(url)
 
-restaurante_vingadores.add_no_cardapio(bebida_suco)
-restaurante_vingadores.add_no_cardapio(prato_pao)
+if response.status_code == 200:
+    dados_json = response.json()
+    dados_restaurantes = {}
+    for item in dados_json:
+        nome_restaurante = item['Company']
 
-bebida_suco.aplicar_desconto()
-prato_pao.aplicar_desconto()
+        if nome_restaurante not in dados_restaurantes:
+            dados_restaurantes[nome_restaurante] = []
 
-restaurante_vingadores.exibir_cardapio
+        dados_restaurantes[nome_restaurante].append({
+            "item": item['Item'],
+            "price": item['price'],
+            "descricao": item['description']
+        })
+else:
+    print(response.status_code)
+
+for nome_restaurante, dados in dados_restaurantes.items():
+    nome_arquivo = f'{nome_restaurante}.json'
+    with open(nome_arquivo, 'w') as arquivo_restaurante:
+        json.dump(dados, arquivo_restaurante, indent=4)
+
+
