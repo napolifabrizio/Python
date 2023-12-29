@@ -57,5 +57,5 @@ Cada projeto dentro desse repositório vai contar com um <b>simples</b> "readme"
 <h3>
 Terceira:
 </h3>
-Documentação Python: https://docs.python.org/pt-br/3/
+Documentação Python: https://docs.python.org/pt-br/3/66
 
