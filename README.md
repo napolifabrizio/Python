@@ -24,6 +24,8 @@ Orientada a Objetos) na linguagem Python
 POO_2 --> Projeto mais avançado sobre POO 
 
 POO_3 --> POO + criação de arquivos dos dados vindos do consumo de API
+
+testes_unitarios --> Aborda a criação de testes unitários pelo Pytest e usando um ambiente virtual do python, já fornecido pela linguagem
 </p>
 
 <h2>Demais projetos</h2>
