@@ -1,4 +1,3 @@
-import timeit
 
 p1 = ("Fabrizio", 18)
 print(p1)
@@ -9,7 +8,7 @@ number = "2"
 number = list(number)
 print(number)
 
-###################################################### List Comprehesion
+###################################################### 1.0 List Comprehesion
 contas_idade = [14, 23, 16, 18, 32]
 maiores_de_idade = []
 
@@ -24,16 +23,14 @@ contas_idade2 = [14, 23, 16, 18, 32]
 maiores_de_idade2 = [idade for idade in contas_idade2 if idade >= 18]
 
 print(maiores_de_idade2)
-##################################################### List Comprehesion
 
-############################## saber aonde o codigo esta sendo executado
+############################## 2.0 saber aonde o codigo esta sendo executado
 import os
 
 diretorio_atual = os.getcwd()
 print("O diretório atual é:", diretorio_atual)
-#####################################################
 
-########################################## Ternary Operator
+########################################## 3.0 Ternary Operator
 
 idade = 10
 maior_de_idade = "maior de idade" if idade >= 18 else "menor de idade"
@@ -42,28 +39,20 @@ print(maior_de_idade)
 
 nums = [1, 2, 3, 4, 5]
 
-# adiciona um elemento no final
+# 4.0 adiciona um elemento no final
 nums.append(6)
 
-# remove um elemento
+# 4.1 remove um elemento
 nums.remove(6)
 
-# remove todos os elementos
+# 4.2 remove todos os elementos
 nums.clear()
 
-# adiciona mais de um elemento
+# 4.3 adiciona mais de um elemento
 nums.extend([1, 2, 3])
 print(nums)
 
-# recurso maneiro
-idades = [18, 19, 20, 21, 22]
-idades_ano_que_vem = [(idade+1) for idade in idades]
-print(idades_ano_que_vem)
-
-maior_21 = [idade for idade in idades if idade > 21]
-print(maior_21)
-
-# tuplas, tuplas são imutáveis
+######################################## 5.0  tuplas, tuplas são imutáveis
 fabrizio = ("fabrizio", 20)
 # fabrizio[1] = 21 --> isso vai dar erro
 # para mudar uma tupla, voce não a muda, vc muda a variavel. Olhe abaixo
@@ -75,7 +64,7 @@ print(fabrizio)
 fabrizio = acrescenta_idade(fabrizio, 2)
 print(fabrizio)
 
-# imprimindo index e valor
+############################################ 6.0 imprimindo index e valor
 
 nums = [1, 2, 3, 4, 5]
 for i in range(len(nums)):
@@ -98,7 +87,7 @@ for nome, idade, ano_nascimento in usuarios:
 for _, idade, _ in usuarios:
    print(idade)
 
-# ordenando numeros
+###################################### 7.0 ordenando numeros
 
 nums = [10, 54, 1, 91, 29, 50, 33]
 sorted(nums) #crescente, não muda o array
@@ -109,7 +98,7 @@ nums.sort() #crescente, muda o array
 verso = [1, 2, 5, 3, 4]
 inverso = list(reversed(verso))
 
-# Melhor loop for
+####################################### 8.0 Melhor loop for
 import time
 
 def double_using_for(arr):
