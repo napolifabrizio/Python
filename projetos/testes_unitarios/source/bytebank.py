@@ -21,15 +21,24 @@ class Funcionario:
         return ano_atual - int(ano_nascimento)
     
     def sobrenome(self):
-        nome_completo = self.nome.strip()
+        nome_completo = self._nome.strip()
         nome_quebrado = nome_completo.split(" ")
         return nome_quebrado[-1]
 
     def calcular_bonus(self):
         valor = self._salario * 0.1
         if valor > 1000:
-            valor = 0
+            raise Exception("Salário alto para receber bônus")
         return valor
+    
+    def _is_socio(self):
+        sobrenomes = ["Luffy", "Zoro", "Robin", "Flam"]
+        return (self._salario >= 100000 and (self.sobrenome() in sobrenomes))
+    
+    def decrescimo_salario(self):
+        if self._is_socio():
+            decrescimo = self._salario * 0.1
+            self._salario -= decrescimo
 
     def __str__(self):
         return f'Funcionario({self._nome}, {self._data_nascimento}, {self._salario})'

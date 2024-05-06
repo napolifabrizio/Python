@@ -1,3 +1,5 @@
+import timeit
+
 p1 = ("Fabrizio", 18)
 print(p1)
 p1 = ("Fabrizio", 20, 2)
@@ -106,3 +108,41 @@ nums.sort() #crescente, muda o array
 
 verso = [1, 2, 5, 3, 4]
 inverso = list(reversed(verso))
+
+# Melhor loop for
+import time
+
+def double_using_for(arr):
+   result = []
+   inicio = time.time()
+   for num in arr:
+      result.append(num*2)
+   fim = time.time()
+   print("FOR: ", fim - inicio)
+
+def double_using_while(arr):
+   result = []
+   i = 0
+   inicio = time.time()
+   while i < len(arr):
+      result.append(arr[i])
+      i+=1
+   fim = time.time()
+   print("WHILE: ", fim - inicio)
+
+def double_using_list_comprehension(arr):
+   inicio = time.time()
+   result = [num*2 for num in arr]
+   fim = time.time()
+   print("LIST COMPREHENSION: ", fim - inicio)
+
+arr = list(range(1, 1_000_001))
+
+double_using_for(arr)
+   # FOR:  0.10441994667053223
+double_using_while(arr)
+   # WHILE:  0.1320939064025879
+double_using_list_comprehension(arr)
+   # LIST COMPREHENSION:  0.06599950790405273
+
+# Portanto, quando puder substituir laço for ou while por list_comprehension, substitua!
