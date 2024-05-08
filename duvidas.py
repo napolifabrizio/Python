@@ -135,3 +135,29 @@ double_using_list_comprehension(arr)
    # LIST COMPREHENSION:  0.06599950790405273
 
 # Portanto, quando puder substituir laço for ou while por list_comprehension, substitua!
+
+######################################## 9.0 Como não precisar usar vários if/else
+
+keyword = input("Digite a opção desejada: (A) - (B) - (C) - (D)")
+
+# Má prática
+
+if keyword == "A":
+   print("Você escolheu A")
+elif keyword == "B":
+   print("Você escolheu B")
+elif keyword == "C":
+   print("Você escolheu C")
+elif keyword == "D": 
+   print("Você escolheu D")
+
+# Boa prática
+
+options = {
+   "A": "Você escolheu A",
+   "B": "Você escolheu B",
+   "C": "Você escolheu C",
+   "D": "Você escolheu D",
+}
+
+print(options[keyword])
